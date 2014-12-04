@@ -1,0 +1,138 @@
+\subsection[Nível de Portfólio]{Nível de Portfólio}
+\label{subsec:requisitos_levantamento_portfolio}
+	\begin{itemize}
+		\item{\textbf{Tema de Investimento}: Modelo de Avaliação (MOA)
+			\\ Referência: Macro-Processo \cite{moa}}
+		\item{\textbf{Épicos}:
+			\begin{itemize}
+				\item{\textbf{PT01}: Administração do MOA
+				\\ Referência: Processo de Inscrição do MOA \& Seleção dos Avaliadores}
+				\item{\textbf{PT02}: Solicitação do MOA
+				\\ Referência: Processo de Inscrição do MOA}
+				\item{\textbf{PT03}: Questionários do MOA
+				\\ Referência: Avaliação das Empresas \& Validação dos Questionários \& Compilação dos Resultados}
+				\item{\textbf{PT04}: Rede de Interação do MOA
+				\\ Referência: Macro-Processo}
+			\end{itemize}}
+	\end{itemize}
+
+\subsection[Nível de Programa]{Nível de Programa}
+\label{subsec:requisitos_levantamento_programa}
+	\begin{itemize}
+		\item{\textbf{\emph{Features}}:
+			\begin{itemize}
+				\item{\textbf{PR0101}: Geração de Agenda do MOA
+				\\ Referência: PT01, Processo de Inscrição do MOA}
+				\item{\textbf{PR0102}: Geração de Edital do MOA
+				\\ Referência: PT01, Processo de Inscrição do MOA}
+				\item{\textbf{PR0103}: Gestão de Avaliadores do MOA
+				\\ Referência: PT01, Processo de Inscrição do MOA \& Seleção dos Avaliadores}
+				\item{\textbf{PR0201}: Solicitação de Participação no MOA
+				\\ Referência: PT02, Processo de Inscrição do MOA}
+				\item{\textbf{PR0202}: Validação de Solicitação de Participação no MOA
+				\\ Referência: PT02, Processo de Inscrição do MOA}
+				\item{\textbf{PR0301}: Aplicação de Questionários do MOA
+				\\ Referência: PT03, Avaliação das Empresas \& Validação dos Questionários}
+				\item{\textbf{PR0302}: Análise de Questionários do MOA
+				\\ Referência: PT03, Validação dos Questionários}
+				\item{\textbf{PR0303}: Disponibilização de Resultados do MOA
+				\\ Referência: PT03, Compilação dos Resultados}
+				\item{\textbf{PR0401}: Perfis de Interação do MOA
+				\\ Referência: PT04, Macro-Processo}
+				\item{\textbf{PR0402}: Grupos de Interação do MOA
+				\\ Referência: PT04, Macro-Processo}
+			\end{itemize}}
+	\end{itemize}
+
+\subsection[Nível de Time do Épico PT02]{Nível de Time do Épico PT02}
+\label{subsec:requisitos_levantamento_programa}
+	\begin{itemize}
+		\item{\textbf{Histórias de Usuário}:
+			\begin{itemize}
+				\item{\textbf{T020101}: Eu como representante da empresa solicitante desejo preencher  o formulário de solicitação do MOA para registrar a intenção de participação da empresa que represento.
+				\\ \textbf{Critérios de Aceitação}
+				\begin{enumerate}
+					\item{O formulário deverá solicitar os seguintes itens da Empresa Solicitante:
+					\begin{itemize}
+						\item{CNPJ}
+						\item{Data de Deferimento}
+						\item{Inscrição Estadual}
+						\item{Nome Fantasia}
+						\item{Razão Social}
+						\item{Número de Funcionários}
+						\item{Área de Atuação}
+						\item{Renda Média Anual}
+						\item{Endereço com os seguintes campos: Bairro, Cidade, UF, Número, Complemento, CEP}
+						\item{Telefone para contato}
+						\item{E-mail}
+						\item{Número de Estabelecimentos}
+						\item{Participação em Processos de Avaliação com os seguintes campos: Informações sobre o Processo de Avaliação que já participou e quais foram as Instituições Avaliadoras; Em caso de não participação, informar se já se inscreveu e nunca foi contemplado}
+					\end{itemize}}
+					\item{Quanto ao preenchimento do formulário, os seguintes dados serão obrigatórios:
+					\begin{itemize}
+						\item{CNPJ}
+						\item{Data de Deferimento}
+						\item{Inscrição Estadual}
+						\item{Razão Social}
+						\item{Número de Funcionários}
+						\item{Área de Atuação}
+						\item{Os seguintes campos de Endereço: Bairro, Cidade, UF, Número, CEP}
+						\item{Telefone para contato}
+						\item{E-mail}
+					\end{itemize}}
+					\item{Para participar, a Empresa Solicitante deverá conter, no mínimo, 10 funcionários.}
+				\end{enumerate}
+				Referência: PR0201, Processo de Inscrição do MOA}
+				\item{\textbf{T020102}: Eu como gerente de solicitação do MOA desejo atribuir solicitações à um determinado analista de solicitação para responsabilizar o analista pela validação da solicitação.
+				\\ \textbf{Critérios de Aceitação}
+				\begin{enumerate}
+					\item{Deverá estar disponível uma lista de solicitações enviadas pelas empresas solicitantes.}
+					\item{Deverá estar disponível uma lista de analistas de solicitações.}
+					\item{Deverá ser possível atribuir uma solicitação a um analista de solicitações.}
+					\item{Apenas um analista de solicitações deverá estar vinculado a uma solicitação.}
+					\item{O gerente de solicitações poderá atribuir até 50 solicitações simultâneas à um determinado analista de solicitações.}
+				\end{enumerate}
+				Referência: PR0201, Processo de Inscrição do MOA}
+				\item{\textbf{T020103}: Eu como representante da empresa solicitante desejo cancelar a solicitação de participação para informar a intenção de desistência.
+				\\ \textbf{Critérios de Aceitação}
+				\begin{enumerate}
+					\item{Deverá ser possível cancelar a solicitação de participação até 48 horas antes do término das inscrições.}
+					\item{Uma vez cancelada a solicitação de participação, não deverá ser possível reatar a intenção de participação para o edital corrente.}
+				\end{enumerate}
+				Referência: PR0201, Processo de Inscrição do MOA}
+				\item{\textbf{T020201}: Eu como analista de solicitação do MOA desejo selecionar uma solicitação de participação do MOA para definir qual solicitação será validada.
+				\\ \textbf{Critérios de Aceitação}
+				\begin{enumerate}
+					\item{O analista de solicitações poderá escolher uma e somente uma solicitação para validação por vez.}
+					\item{O analista de solicitações não poderá escolher uma nova solicitação para validação enquanto estiver com uma solicitação escolhida pendente.}
+				\end{enumerate}
+				Referência: PR0202, Processo de Inscrição do MOA}
+				\item{\textbf{T020202}: Eu como analista de solicitação do MOA desejo validar os dados fornecidos pela empresa solicitante para determinar a viabilidade de participação.
+				\\ \textbf{Critérios de Aceitação}
+				\begin{enumerate}
+					\item{Deverá haver um Checklist para controle da avaliação da solicitação por parte do analista de solicitações e um campo para envio de considerações quanto à solicitação.}
+					\item{O Checklist deverá incluir os seguintes questionamentos:
+					\begin{itemize}
+						\item{A Empresa com o CNPJ informado realmente existe?}
+						\item{Os funcionários trabalham no local indicado na solicitação?}
+						\item{O número de funcionários que trabalham na empresa está dentro do valor estipulado?}
+						\item{O endereço informado é de um local físico funcional?}
+						\item{O telefone informado pertence à Empresa solicitante?}
+						\item{A área de atuação corresponde à mesma do período corrente do MOA?}
+						\item{A Empresa solicitante está em débito com a Receita Federal?}
+						\item{O e-mail informado realmente pertence à Empresa solicitante?}
+ 					\end{itemize}}
+					\item{Deverá ser disponibilizada a opção de reprovar uma solicitação.}
+					\item{Deverá ser disponibilizada a opção de aprovar uma solicitação.}
+					\item{Deverá ser disponibilizada a opção para enviar a solicitação para correção.}
+				\end{enumerate}
+				Referência: PR0202, Processo de Inscrição do MOA}
+				\item{\textbf{T020203}: Eu como representante da empresa solicitante desejo alterar as informações do formulário de solicitação de participação do MOA para corrigir inconsistências encontradas pelo analista de solicitação.
+				\\ \textbf{Critérios de Aceitação}
+				\begin{enumerate}
+					\item{O representante da empresa solicitante só poderá efetuar correções no formulário de solicitação caso a mesma seja passível de correções.}
+					\item{Os itens só poderão ser modificados se exigida a devida correção.}
+				\end{enumerate}
+				Referência: PR0202, Processo de Inscrição do MOA}
+			\end{itemize}}
+	\end{itemize}
